@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# NOTE: run  node scripts/set-domain.js https://yourname.dev  to fix this URL
+Sitemap: https://abhishekasati001.netlify.app/sitemap.xml

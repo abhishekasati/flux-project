@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: when you publish a real case study or blog post, add a <url> block for it
+     and update <lastmod> (YYYY-MM-DD). Do not list the template pages. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://abhishekasati001.netlify.app/</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+</urlset>

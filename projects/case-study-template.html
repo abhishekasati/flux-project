@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===================================================================
+       CASE STUDY TEMPLATE
+       How to use it:
+         1. Duplicate this file: projects/case-study-template.html -> projects/my-project.html
+         2. Replace every hint paragraph (class="hint") and every TODO(you) with your real content.
+         3. Delete the line <meta name="robots" content="noindex"> below, so Google can index the page.
+         4. Update <title>, description and canonical.
+         5. Point the "Case study" link on your project card at the new file.
+       A good case study is 400 to 700 words. Be specific, show real numbers, admit what went wrong.
+       =================================================================== -->
+  <title>Project name: case study | Abhishek Asati</title>
+  <meta name="description" content="How I built PROJECT NAME: the problem, the decisions, what broke and the result.">
+  <meta name="robots" content="noindex"><!-- TODO(you): delete this line when the page is real -->
+  <link rel="canonical" href="https://abhishekasati001.netlify.app/projects/case-study-template.html">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0d0f14">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Project name: case study">
+  <meta property="og:description" content="How I built PROJECT NAME: the problem, the decisions, what broke and the result.">
+  <meta property="og:image" content="https://abhishekasati001.netlify.app/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="preload" href="../fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/dm-sans-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/theme-init.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="../index.html" aria-label="Abhishek Asati, home">AA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#projects">All projects</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Light theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main" class="page container">
+    <a class="crumb" href="../index.html#projects">Back to projects</a>
+
+    <header class="page-head">
+      <h1>Project name</h1>
+      <!-- TODO(you): one sentence a non-technical person understands: what it is and why it exists. -->
+      <p class="lead">One sentence: what this project does and who it helps.</p>
+    </header>
+
+    <dl class="facts-inline">
+      <div><dt>Role</dt><dd>Solo: design and code</dd></div>
+      <div><dt>Timeline</dt><dd>X weeks, Month 2026</dd></div>
+      <div><dt>Stack</dt><dd>HTML, CSS, JavaScript</dd></div>
+      <div><dt>Links</dt><dd><a href="https://YOUR-PROJECT-ONE.netlify.app">Live demo</a>, <a href="https://github.com/YOUR-USERNAME/project-one">Source</a></dd></div>
+    </dl>
+
+    <article class="prose">
+      <figure>
+        <!-- TODO(you): replace with <img src="../images/projects/project-one.webp" alt="..." width="1280" height="720" loading="lazy" decoding="async"> -->
+        <div class="shot" role="img" aria-label="Screenshot placeholder">Hero screenshot</div>
+        <figcaption>Caption: what the reader is looking at.</figcaption>
+      </figure>
+
+      <h2>The problem</h2>
+      <p class="hint">Who had the problem? What was painful or slow? How did you notice it? Two or three sentences, with a real example.</p>
+
+      <h2>Goals and limits</h2>
+      <p class="hint">What did "done" look like? List constraints: no framework, mobile first, free hosting, a deadline, a data limit.</p>
+      <ul class="hint">
+        <li>Goal one</li>
+        <li>Constraint one</li>
+      </ul>
+
+      <h2>How I built it</h2>
+      <p class="hint">Walk through 2 or 3 decisions. For each, say the options you considered and why you chose one. Trade-offs show how you think.</p>
+      <h3>Decision: name it</h3>
+      <p class="hint">Option A vs option B. What you picked. What you gave up.</p>
+      <pre><code>// Show one short snippet you are proud of (under 15 lines)
+function debounce(fn, ms) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), ms);
+  };
+}</code></pre>
+
+      <h2>What broke</h2>
+      <p class="hint">One real bug or wrong turn. How you found it (DevTools? logging?), and how you fixed it. Recruiters trust people who admit mistakes.</p>
+
+      <h2>Result</h2>
+      <p class="hint">Numbers beat adjectives: load time, Lighthouse score, users, bundle size, hours saved, feedback from a real person.</p>
+      <ul class="hint">
+        <li>Metric one</li>
+        <li>Metric two</li>
+      </ul>
+
+      <h2>What I would change next</h2>
+      <p class="hint">Two honest improvements. This shows you can judge your own work.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Abhishek Asati</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

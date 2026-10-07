@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===================================================================
+       TODO(you) 1: DOMAIN
+       Everywhere you see https://abhishekasati001.netlify.app, put your real URL.
+       Easiest way (replaces it in every file at once):
+           node scripts/set-domain.js https://yourname.dev
+       Free options: yourname.netlify.app, yourname.github.io, or buy a
+       short .dev / .me domain (~$10/yr) for a more professional look.
+       =================================================================== -->
+
+  <title>Abhishek Asati | Frontend Developer (HTML, CSS, JavaScript)</title>
+  <meta name="description" content="Abhishek Asati is a frontend developer and CSE student at SATI Vidisha, India. See projects built with HTML, CSS and JavaScript, and get in touch.">
+  <link rel="canonical" href="https://abhishekasati001.netlify.app/">
+  <meta name="author" content="Abhishek Asati">
+  <meta name="robots" content="index, follow">
+
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0d0f14">
+
+  <!-- Link previews (WhatsApp, LinkedIn, X, Slack, Discord) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abhishek Asati">
+  <meta property="og:title" content="Abhishek Asati | Frontend Developer">
+  <meta property="og:description" content="Fast, accessible web interfaces built with HTML, CSS and JavaScript. Projects, skills and contact.">
+  <meta property="og:url" content="https://abhishekasati001.netlify.app/">
+  <meta property="og:image" content="https://abhishekasati001.netlify.app/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Abhishek Asati, frontend developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhishek Asati | Frontend Developer">
+  <meta name="twitter:description" content="Fast, accessible web interfaces built with HTML, CSS and JavaScript.">
+  <meta name="twitter:image" content="https://abhishekasati001.netlify.app/images/og-image.png">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Fonts are self-hosted (no Google request, faster, privacy-friendly) -->
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dm-sans-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme-init.js"></script>
+
+  <!-- Structured data so Google can show your name, role and profiles.
+       TODO(you) 2: set the real GitHub and LinkedIn URLs in "sameAs" and
+       your real URL in "url". (set-domain.js handles the URL.) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhishek Asati",
+    "url": "https://abhishekasati001.netlify.app/",
+    "jobTitle": "Frontend Developer",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Samrat Ashok Technological Institute, Vidisha"
+    },
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Web accessibility", "Python", "C"],
+    "sameAs": [
+      "https://github.com/abhishekasati",
+      "https://www.linkedin.com/in/abhishek-asati-91388739b"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="#home" aria-label="Abhishek Asati, back to top">AA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- TODO(you) optional: when you publish your first post, add
+             <li><a href="#writing">Writing</a></li> and enable the Writing section below. -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Light theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <!-- TODO(you) 3: keep this line only while it is true. Remove the whole <p> when you are not looking. -->
+        <p class="availability rise">Open to internships</p>
+        <h1 id="hero-title">Abhishek Asati</h1>
+        <!-- TODO(you) 4: make the tagline specific. "Frontend developer who builds X for Y"
+             beats a generic line. Example: "I build quick, keyboard-friendly web tools for students." -->
+        <p class="tagline rise">Frontend developer building fast, accessible interfaces.</p>
+        <p class="hero-sub rise">Second-year CSE student at SATI Vidisha. I work with HTML, CSS and JavaScript.</p>
+        <div class="actions rise">
+          <a class="btn btn-primary" href="#projects">View my projects</a>
+          <!-- TODO(you) 5: save your resume as assets/Abhishek-Asati-Resume.pdf (keep it 1 page). -->
+          <a class="btn btn-ghost" href="assets/Abhishek-Asati-Resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+
+      <!-- Signature element: the page runs on --hue. Moving the slider rethemes the whole site. -->
+      <aside class="tuner rise" aria-label="Accent colour tuner">
+        <div class="tuner-bar">style.css</div>
+        <pre class="tuner-code" aria-hidden="true"><code>:root {
+  <span class="tk-prop">--hue</span>: <span class="tk-num" data-hue-text>285</span>;
+  <span class="tk-prop">--accent</span>: <span class="swatch"></span>oklch(<span data-lc-text>0.76 0.14</span> <span class="tk-num" data-hue-text>285</span>);
+}</code></pre>
+        <div class="tuner-controls">
+          <div class="tuner-row">
+            <label for="hue">Accent hue</label>
+            <output for="hue" id="hueOut">285</output>
+          </div>
+          <input id="hue" type="range" min="0" max="360" step="1" value="285">
+          <p class="tuner-hint">The whole page reads these two variables. Drag the slider to change it.</p>
+          <button class="tuner-reset" id="hueReset" type="button">Reset colour</button>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <div class="about-grid">
+        <div class="about-main">
+          <!-- TODO(you) 6: add your photo as images/profile.jpg (square, about 600x600, under 100 KB).
+               Until the file exists, the initials "AA" are shown instead. -->
+          <figure class="portrait">
+            <img src="images/profile.jpg" alt="Portrait of Abhishek Asati" width="132" height="132" decoding="async">
+            <span class="portrait-fallback" aria-hidden="true">AA</span>
+          </figure>
+          <div>
+            <p class="lead">I'm a second-year Computer Science student at SATI Vidisha. I like turning ideas into clean, quick-loading web pages that work for everyone, on any screen.</p>
+            <!-- TODO(you) 7: add 2 to 3 sentences of YOUR story. What got you into the web?
+                 What do you want next (internship in which area)? What are you building right now?
+                 Keep it honest and specific. Recruiters remember specifics. -->
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt>College</dt><dd>SATI Vidisha</dd></div>
+          <div><dt>Course</dt><dd>B.Tech, CSE (2nd year)</dd></div>
+          <div><dt>Focus</dt><dd>Frontend development</dd></div>
+        </dl>
+      </div>
+
+      <!-- TODO(you) optional: Achievements. Add only REAL items (hackathon, club role, certificate,
+           open-source pull request, competition rank). Delete this block if you have none yet.
+      <h3>Highlights</h3>
+      <ul>
+        <li>Hackathon / award / certificate, with the year</li>
+      </ul>
+      -->
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <!-- TODO(you) 8: be honest. Only list a skill if you can point to a project that uses it.
+         Items with class="learning" show with a dashed border, so "still learning" is clear and
+         credible. Move a skill out of "Learning" once you have shipped something with it. -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-row">
+          <div>
+            <h3>Frontend</h3>
+            <p>Semantic markup, responsive layouts, DOM scripting</p>
+          </div>
+          <ul class="chips">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-row">
+          <div>
+            <h3>Tools</h3>
+            <p>How I build, test and ship</p>
+          </div>
+          <ul class="chips">
+            <li>Git and GitHub</li>
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+            <li>Lighthouse</li>
+          </ul>
+        </div>
+        <div class="skill-row">
+          <div>
+            <h3>Computer science</h3>
+            <p>Fundamentals from my degree</p>
+          </div>
+          <ul class="chips">
+            <li>C</li>
+            <li>Python</li>
+            <li>Data structures</li>
+          </ul>
+        </div>
+        <div class="skill-row">
+          <div>
+            <h3>Learning now</h3>
+            <p>Next on my list</p>
+          </div>
+          <ul class="chips">
+            <li class="learning">React</li>
+            <li class="learning">Node.js</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <!-- ===================================================================
+         TODO(you) 9: PROJECTS. This is the most important part of the page.
+         Replace the 3 cards below with REAL work. Per card:
+           1. Screenshot: save to images/projects/NAME.webp (1280x800, under 120 KB) and swap the
+              <div class="thumb"> for the <img> line shown in the comment inside the card.
+           2. One sentence: what it does and who it helps.
+           3. Role + Result. Result needs ONE number or fact (users, load time, ms saved, who uses it).
+           4. Live demo link + GitHub link. If a link is not ready yet, delete that <a>.
+           5. Delete the data-todo attribute from the <article> when the card is finished.
+              (node scripts/check.js lists every card that still has it.)
+         Best order: strongest project first. 3 great projects beat 8 average ones.
+         Avoid tutorial clones (todo list, calculator, weather app) unless you added something of your own.
+         Tags: use the same spelling on every card ("JavaScript", not "JS" on one and "Javascript" on another).
+         When you have 4 or more cards, filter buttons by tag appear automatically.
+         =================================================================== -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="filters" id="projectFilters" role="group" aria-label="Filter projects by technology" hidden></div>
+      <p class="visually-hidden" id="filterStatus" role="status" aria-live="polite"></p>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- PROJECT 1 (your best one: also link its case study) -->
+        <article class="card" data-todo>
+          <!-- Replace the next line with:
+               -->
+          <img src="images/projects/project-one.webp" alt="Screenshot of PROJECT NAME showing ..." width="1280" height="800" loading="lazy" decoding="async">
+          <h3>Nagar Setu — नगर सेतु</h3>
+          <p class="blurb">Nagar Setu is a smart civic platform that helps citizens of Bhopal report local problems</p>
+          <dl class="meta">
+            <div><dt>Role</dt><dd>Abhishek: design and code</dd></div>
+            <div><dt>Result</dt><dd>Hakam: design and code</dd></div>
+          </dl>
+          <ul class="tags" aria-label="Technologies">
+            <li>React</li>
+            <li>Express.js</li>
+            <li>Firestore</li>
+          </ul>
+          <p class="links">
+            <a href="https://nagarsetubhopal.vercel.app">Live demo</a>
+          </p>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="card" data-todo>
+          <div class="thumb" aria-hidden="true">Screenshot</div>
+          <h3>Project name</h3>
+          <p class="blurb">One sentence: what it does and who it helps.</p>
+          <dl class="meta">
+            <div><dt>Role</dt><dd>Solo: design and code</dd></div>
+            <div><dt>Result</dt><dd>Add one number or fact</dd></div>
+          </dl>
+          <ul class="tags" aria-label="Technologies">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <p class="links">
+            <a href="https://YOUR-PROJECT-TWO.netlify.app">Live demo</a>
+            <a href="https://github.com/YOUR-USERNAME/project-two">Source code</a>
+          </p>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="card" data-todo>
+          <div class="thumb" aria-hidden="true">Screenshot</div>
+          <h3>Project name</h3>
+          <p class="blurb">One sentence: what it does and who it helps.</p>
+          <dl class="meta">
+            <div><dt>Role</dt><dd>Solo: design and code</dd></div>
+            <div><dt>Result</dt><dd>Add one number or fact</dd></div>
+          </dl>
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/YOUR-USERNAME/project-three">Source code</a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= WRITING (optional, disabled) =================
+         TODO(you) optional: after you write your first post (copy blog/post-template.html),
+         remove the comment markers around this section and add the nav link at the top.
+         Two or three short posts about what you learned beat a long blog you never update.
+         Ideas: "How I made dark mode flash-free", "Debouncing a search box, explained",
+                "What I learned scoring 100 on Lighthouse".
+
+    <section class="section container" id="writing" aria-labelledby="writing-title">
+      <h2 id="writing-title">Writing</h2>
+      <ul class="prose">
+        <li><a href="blog/your-first-post.html">Post title</a> <span class="hint">(Month 2026)</span></li>
+      </ul>
+    </section>
+    -->
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Have an internship, a project or a question? Send a message and I'll reply within two days.</p>
+          <ul class="social">
+            <!-- TODO(you) 10: real email, GitHub and LinkedIn. -->
+            <li><a href="mailto:abhishekasati2004@gmail.com">abhishekasati2004@gmail.com</a></li>
+            <li><a href="https://github.com/abhishekasati" rel="me noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/abhishek-asati-91388739b" rel="me noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <!-- ===============================================================
+             TODO(you) 11: MAKE THE FORM REAL (5 minutes, free).
+               1. Go to https://web3forms.com, enter your email, get an Access Key by email.
+               2. Paste it into data-access-key below (it is safe to keep it public).
+               3. Set data-fallback-email to your email.
+             Until the key is set, the form does NOT pretend to send. It opens the visitor's
+             email app with the message filled in. Messages from the form arrive in your inbox.
+             Alternative if you host on Netlify: use Netlify Forms instead.
+             =============================================================== -->
+        <form id="contactForm" novalidate
+              data-endpoint="https://api.web3forms.com/submit"
+              data-access-key="YOUR_WEB3FORMS_ACCESS_KEY"
+              data-fallback-email="abhishekasati2004@gmail.com">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <p class="error" id="name-error"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <p class="error" id="message-error"></p>
+          </div>
+          <!-- Honeypot: hidden from people, bots fill it in. Do not remove. -->
+          <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Abhishek Asati</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/abhishekasati" rel="me noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/abhishek-asati-91388739b" rel="me noopener">LinkedIn</a></li>
+        <li><a href="#home">Back to top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- TODO(you) optional, after deploying: run Lighthouse (Chrome DevTools > Lighthouse) and, if all four
+       scores are 95+, add a small line in the footer: "Lighthouse 100 / 100 / 100 / 100". Real proof beats claims.
+       Optional analytics without cookies: GoatCounter or Plausible (one script tag; then add its host to
+       script-src and connect-src in _headers). -->
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
